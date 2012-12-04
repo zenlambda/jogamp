@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jogamp</groupId>
+	<artifactId>jogamp</artifactId>
+	<version>2.0-rc11-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sonatype-public-repository</id>
+			<url>https://oss.sonatype.org/content/groups/public</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<properties>
+		<packageMD5>865d422a7ed7fa54117fc2393db2da0c</packageMD5>
+	</properties>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.googlecode.maven-download-plugin</groupId>
+				<artifactId>maven-download-plugin</artifactId>
+				<version>1.0.0</version>
+				<inherited>false</inherited>
+				<executions>
+					<execution>
+						<id>download-jogamp</id>
+						<phase>package</phase>
+						<goals>
+							<goal>wget</goal>
+						</goals>
+						<configuration>
+							<url>http://jogamp.org/deployment/v${project.version}/archive/jogamp-all-platforms.7z</url>
+							<unpack>false</unpack>
+							<outputDirectory>${project.build.directory}</outputDirectory>
+							<md5>${packageMD5}</md5>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.zenlambda.maven</groupId>
+				<artifactId>un7z-maven-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<inherited>false</inherited>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+					</execution>
+				</executions>
+
+				<configuration>
+					<srcArchive>${project.build.directory}/jogamp-all-platforms.7z</srcArchive>
+					<destDir>${project.build.directory}</destDir>
+					<failIfNotFound>true</failIfNotFound>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>gluegen-rt</module>
+		<module>jogl-all</module>
+	</modules>
+</project>
