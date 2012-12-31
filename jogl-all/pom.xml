@@ -28,8 +28,53 @@
 									<type>jar</type>
 								</arifact>
 								<arifact>
+									<classifier>natives-windows-i586</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-windows-i586.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
 									<classifier>natives-windows-amd64</classifier>
 									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-windows-amd64.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-macosx-universal</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-macosx-universal.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-android-armv6</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-android-armv6.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-linux-armv6</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-linux-armv6.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-linux-armv6hf</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-linux-armv6hf.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-linux-i586</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-linux-i586.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-linux-amd64</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-linux-amd64.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-solaris-i586</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-solaris-i586.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-solaris-amd64</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/jogl-all-natives-solaris-amd64.jar</file>
 									<type>jar</type>
 								</arifact>
 								<arifact>

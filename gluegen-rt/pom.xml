@@ -29,8 +29,48 @@
 									<type>jar</type>
 								</arifact>
 								<arifact>
+									<classifier>natives-windows-i586</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-windows-i586.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
 									<classifier>natives-windows-amd64</classifier>
 									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-windows-amd64.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-macosx-universal</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-macosx-universal.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-linux-amd64</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-linux-amd64.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-linux-i586</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-linux-i586.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-linux-armv6</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-linux-armv6.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-linux-armv6hf</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-linux-armv6hf.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-android-armv6</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-android-armv6.jar</file>
+									<type>jar</type>
+								</arifact>
+								<arifact>
+									<classifier>natives-solaris-amd64</classifier>
+									<file>${project.parent.build.directory}/jogamp-all-platforms/jar/gluegen-rt-natives-solaris-amd64.jar</file>
 									<type>jar</type>
 								</arifact>
 								<arifact>

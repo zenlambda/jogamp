@@ -20,6 +20,7 @@
 
 	<properties>
 		<packageMD5>865d422a7ed7fa54117fc2393db2da0c</packageMD5>
+		<jogamp.version>2.0-rc11</jogamp.version>
 	</properties>
 	
 	<build>
@@ -37,7 +38,7 @@
 							<goal>wget</goal>
 						</goals>
 						<configuration>
-							<url>http://jogamp.org/deployment/v${project.version}/archive/jogamp-all-platforms.7z</url>
+							<url>http://jogamp.org/deployment/v${jogamp.version}/archive/jogamp-all-platforms.7z</url>
 							<unpack>false</unpack>
 							<outputDirectory>${project.build.directory}</outputDirectory>
 							<md5>${packageMD5}</md5>
@@ -48,7 +49,7 @@
 			<plugin>
 				<groupId>com.zenlambda.maven</groupId>
 				<artifactId>un7z-maven-plugin</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>0.0.1</version>
 				<inherited>false</inherited>
 				<executions>
 					<execution>
